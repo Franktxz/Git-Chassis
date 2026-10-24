@@ -1,0 +1,37 @@
+#---- GIT ESTADOS
+
+GIT TIENE EN SINTEXIS 3 ESTADOS: 
+
+	Working directory (Donde estas trabajando)
+		"git add"
+	staging area (Limbo hasta confirmar su guardado)
+		"git commit"
+	repository (Guardado final)
+
+
+#---- GIT COMANDOS
+
+- git init - Para crear un proyecto nuevo
+- git add <file> - Es para poder pasar los arch de working directory al staging area
+- git status - Para veer el estado de los archivos 
+- git commit - Es para pasar los archivos de staging area a repository
+- git push - Es para subir a un repositorio remoto
+- git pull - Para traer los cambios que han hechos otros desarrolladores
+- git clone - Es hacer una copia del servidor central a tu cpu para poder trabajar.
+- git log - Para ver toos los commits que hemos creado
+- git checkout <nombre del archivo> - Regresa o revierte los cambios de los archivos
+- git diff <namearchivo> - Para ver las diferencias hechas en los archivos
+
+#---- GIT NOTAS
+
+"Antes de crear un commit debes registrar el usuario quien eres con el git config global"
+wq - Para guardar el comnit.
+
+
+#---- PASOS PARA EMPEZAR
+ - 1. Iniciar el repositorio en bash dentro del proyecto. 
+ - 2. En el bash poner "ls" - Muestra los archivos que tiene el proyecto
+ - 3. En el bash poner "git init" - Empieza el proyecto
+ - 4. En el bash poner "git status" - Ver el estado de los archivos
+ - 5. En el bash poner "git add" - Para decir que archivos agregar staging area
+ 

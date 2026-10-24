@@ -1,0 +1,62 @@
+CONECTAR CLAUDE CON POWER BI DESKTOP.
+
+---------ETAPA CONECTAR MCP
+
+1. Instalar claude de escritorio
+2. Instalar Visual Code (Luego instalar servidor MCP - Power Bi Modeling MCP Server)
+
+3. Luego buscar el archivos %USERPROFILE%
+3.1. Buscar la carpeta - .vscode
+3.2. Buscar la carpeta - extensions
+3.3. Buscar la carpeta - Analysis-services-powerbi - modeling mcp
+3.4. Buscar la carpeta - Server
+3.5. Se encuentra el archivo powerbi-modeling-mcp.exe
+
+4. Configurar en claude.
+4.1. En cloude ir a Ajuste
+4.2. Ir a desarrollador (Editar configuracion MCP)
+4.3. En el archivo claude_desktop_configuracion.json (Poner editar en el bloc de notas)
+4.5. Se debe editar y reemplazar por el siguiente codigo:
+
+{
+  "mcpServers": {
+    "powerbi-modeling-mcp": {
+      "type": "stdio",
+      "command": "RUTA",
+      "args": ["--start"],
+      "env": {}
+    }
+  }
+}
+
+#Se debe cambiar la ruta por el servidor#
+
+4.6. Se debe ir al paso 3.5 y dar en copiar como ruta de acceso y se reemplaza por esa ruta en el paso 4.5 (La ruta copiada se debe reemplazar el \ por \\).
+
+4.7. Verificar: Dar en salir el claude y luego abrir. Ir a ajustes y luego a desarrollador. Se podra ver el servidor.
+
+----------ETAPA PARA PODER MODIFICAR LAS VISUALES. 
+Nota: Se debe trabajar en el formato PBIP.
+Nota: "Para los que no les salga la opcion del (MarketPlace plugins) Tienen que instalar GIT."
+
+El GitHub - https://github.com/microsoft/skills-for-fabric
+
+1. Abrir claude e ir <> Code
+2. Luego ir a Ajuste -> Plugins -> Añadir -> Añadir Markerplace
+3. Luego elegir Añadir desde un repositorio lo del GitHub 
+4. Elegir la skill (PowerBi Autering) y (Fabric skill)
+
+5. Instalar el chat cloude. (Verifica si tengo instalado Node.js instalado. Si no lo tengo instalalo y confirmame la version).
+
+6. Instalar el chat claude. (
+Instala globalmente estas CLI de Microsoft y muestra la version:
+	- @microsoft/powerbi-desktop-bridge-cli
+	- @microsoft/powerbi-report-authoring-cli
+)
+
+7. Abrir un informe en blanco de Power Bi Desktop .ipbip y activar los complementos (
+	Archivo - Opciones - Caracteristicas de version preliminar:
+	Activar -> Habilitacion del acceso de herramientas externas a Power Bi Desktop a traves de API locales seguras.
+	Tambien tener activado Guardar Proyecto Power Bi y sus almacenar)
+
+8. Guardar como Proyecto en una carpeta.
