@@ -34,4 +34,25 @@ wq - Para guardar el comnit.
  - 3. En el bash poner "git init" - Empieza el proyecto
  - 4. En el bash poner "git status" - Ver el estado de los archivos
  - 5. En el bash poner "git add <archivo>" - Para decir que archivos agregar staging area
+ - 5.1. Para agregar todos los archivos y no uno por uno usar: git add .
  - 6. Agregar nuestro 1er commit "git commit" - Sirve para hacer nuestra primera foto
+ - 7. Escribir el commit y luego dar esc : + wq 
+ - 7.1. Con "git log" se puede ver todos los commits del proyecto
+ - 8. Si quieres regresar al ultimo punto guardado usar "git checkout -- <archivo> - Despues de volver no puedes regresar
+ - 9. Con "git diff <archivo>" - podemos ver los cambios que se han hehco antes de guardar [q para salir a la terminal]
+ - 10. Para evitar agregar archivos al entorno de trabajo se debe crear .gitignore (Agregar los arch o carpeta a ignorar)
+
+   ## Para crear mas variaciones alternativas del proyecto 
+
+ - 11. git branch - Ver cuantas versiones alternativas tienes 
+ - 12. Crear una nueva version alternativa - git branch <nombre de la nueva version>
+ - 13. Para moverse entre versiones - git checkout <nombre de la version>
+
+  ## Para subir el proyecto a github
+
+ - 14. git remote add origin <ruta> - Creas el repositorio en gthub y copias la ruta
+ - 15. git push -u origin <version del proyecto> - Poner la version que necesites subir y login
+
+  ## Para copiar el proyecto se debe
+
+- 16. git clone <el repositorio de github la ruta>
