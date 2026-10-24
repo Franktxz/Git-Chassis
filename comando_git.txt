@@ -24,7 +24,7 @@ GIT TIENE EN SINTEXIS 3 ESTADOS:
 
 #---- GIT NOTAS
 
-"Antes de crear un commit debes registrar el usuario quien eres con el git config global"
+"Antes de crear un commit debes registrar el usuario quien eres con el git config global user.email "email" y git config global user.name "name"
 wq - Para guardar el comnit.
 
 
@@ -33,5 +33,5 @@ wq - Para guardar el comnit.
  - 2. En el bash poner "ls" - Muestra los archivos que tiene el proyecto
  - 3. En el bash poner "git init" - Empieza el proyecto
  - 4. En el bash poner "git status" - Ver el estado de los archivos
- - 5. En el bash poner "git add" - Para decir que archivos agregar staging area
- 
+ - 5. En el bash poner "git add <archivo>" - Para decir que archivos agregar staging area
+ - 6. Agregar nuestro 1er commit "git commit" - Sirve para hacer nuestra primera foto
